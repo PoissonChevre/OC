@@ -20,14 +20,14 @@ Voici un aperçu des projets que j’ai menés au cours de cette formation :
 
 1. **Démarrer la formation d’Administrateur Systèmes, Réseaux et Sécurité**  
 2. **Gérer les demandes au quotidien (gestion d’incidents et de tickets IT)**  
-3. **[Mettez en place et documentez le réseau local d'une startup](https://github.com/PoissonChevre/networkHillStart_OC_P3)**  
+3. **[Mettez en place et documentez le réseau local d'une startup](https://github.com/PoissonChevre/OC/tree/master/OC_P3_network_HillStart)**  
 4. **[Déployez une architecture ntiers pour une PME](https://github.com/PoissonChevre/archiNtiers_OC_P4)**  
 5. **Mettre en place des services web sécurisés**  
 6. **Raccorder une entité et ses postes de travail au SI d’une entreprise**  
 7. **Configurer des services réseaux et des équipements d’interconnexion**  
 8. **Superviser le SI d’une entreprise avec des outils de monitoring**  
 9. **[Gérez le parc informatique d'une PME](https://github.com/PoissonChevre/ansible_OC_P9)**  
-10. **[Mettez en place une nouvelle solution de sauvegarde](https://github.com/PoissonChevre/rsync_OC_P10)**  
+10. **[Mettez en place une nouvelle solution de sauvegarde](https://github.com/PoissonChevre/OC/tree/master/OC_P10_rsync)**  
 11. **Sécuriser le réseau d’une grande entreprise**  
 12. **Évaluer et améliorer le niveau de sécurité d’un domaine**  
 13. **Gérer une migration vers le cloud**  
