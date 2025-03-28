@@ -1,0 +1,29 @@
+---
+# tasks file for linux_apt_update
+# https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html
+# https://www.toptechskills.com/ansible-tutorials-courses/ansible-apt-module-tutorial-examples/
+
+- name: update apt package manager repositories cache
+  become: true
+  apt:
+    update_cache: true
+    cache_valid_time: 86400 # (s)|one day 
+
+- name: upgrade installed packages
+  become: true
+  apt:
+  # upgrade: full # full(aptitude full-upgrade)|dist(apt-get dist-upgrade)
+    name: "*"
+    state: latest
+
+# clean up the apt cache   
+- name: clean apt cache
+  become: true
+  apt:
+    autoclean: yes
+
+# remove package dependencies that are no longer required
+- name: remove old dependencies
+  become: true
+  apt:
+    autoremove: true

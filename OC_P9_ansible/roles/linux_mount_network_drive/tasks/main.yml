@@ -1,0 +1,25 @@
+---
+# tasks file for linux_mount_network_drive
+# tasks file for linux_copy_file
+# https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy_module.html
+
+- name: ensure required packages are installed (keyutils & cifs-utils)
+  apt: 
+    name:
+      - keyutils
+      - cifs-utils
+    state: present
+
+- name: add sudo configuration for mount command (GDL_BARZINI_AUTHENTICATED)
+  lineinfile:
+    path: /etc/sudoers
+    line: "%#1280401187 ALL=(ALL) NOPASSWD: /bin/mount" # gid gdl_barzini_authentificated_users
+    state: present
+    validate: '/usr/sbin/visudo -cf %s'                 # validate sudoers file syntax
+   
+- name: copy script mount_smb_share.sh to /etc/profil.d/ (chmod 0644)
+  ansible.builtin.copy:
+    src: /etc/ansible/roles/linux_mount_network_drive/library/mount_smb_share.sh
+    dest: /etc/profile.d/
+    mode: '0644'
+

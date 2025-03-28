@@ -1,0 +1,28 @@
+---
+# defaults file for win_update and upgrade chocolatey packages
+
+- name: search and download updates without installing them
+  win_updates:
+    category_names: 
+      - SecurityUpdates
+      - CriticalUpdates
+      - UpdateRollups
+    state: downloaded
+
+- name: install all security, critical, and rollup updates 
+  win_updates:
+    category_names:
+      - SecurityUpdates
+      - CriticalUpdates
+      - UpdateRollups
+    state: installed
+    reboot: true
+    reboot_timeout: 300             # Maximum seconds to wait for machine to re-appear on the network
+
+# chocolatey upgrade packages
+# https://docs.ansible.com/ansible/latest/collections/chocolatey/chocolatey/win_chocolatey_module.html
+
+- name: chocolatey upgrade installed packages
+  win_chocolatey:
+    name: all
+    state: latest

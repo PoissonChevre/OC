@@ -1,0 +1,19 @@
+---
+# defaults file for win_deploy_colour_contrast_analyser    
+# https://www.tpgi.com/color-contrast-checker/
+# https://community.chocolatey.org/packages/colour-contrast-analyser#ansible
+# C:\ProgramData\chocolatey\lib\colour-contrast-analyser\tools\ 
+
+- name: install colour-contrast-analyser
+  win_chocolatey:
+    name: colour-contrast-analyser
+    version: 3.5.1
+    state: present
+
+- name: create an application shortcut on the desktop
+  community.windows.win_shortcut:
+    description: colour contrast analyser
+    src: '%ProgramData%\chocolatey\lib\colour-contrast-analyser\tools\cca.exe'
+    dest: '%Public%\Desktop\CCA.lnk'
+    icon: '%ProgramData%\chocolatey\lib\colour-contrast-analyser\tools\cca.exe,0'
+
