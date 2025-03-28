@@ -1,0 +1,25 @@
+---
+# tasks file for win_mount_network_drive
+# https://it-infra-ya.com/en/ansible-script_en/
+# https://docs.ansible.com/ansible/latest/collections/community/windows/win_scheduled_task_module.html
+
+- name: copy powershell script on file server \\SRV-INF-001\app_script$\
+  win_copy:
+   src: /etc/ansible/roles/win_mount_network_drive/library/MountNetworkDrive.ps1
+   dest: \\SRV-INF-001\app_script$\MountNetworkDrive.ps1
+   register: result
+   until: result is success
+   delay: 60
+
+- name: create a task (on logon) to run the script that mount the network drive 
+  community.windows.win_scheduled_task:
+    name: MapNetworkDriveTask
+    group: Domain Users
+    description: Map network drive at user logon
+    actions:
+    - path: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+      arguments: -WindowStyle Hidden -ExecutionPolicy Bypass -File \\SRV-INF-001\app_script$\MountNetworkDrive.ps1
+    triggers:
+    - type: logon
+    run_level: highest
+    state: present
