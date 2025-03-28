@@ -1,7 +1,8 @@
-# 🎓 Parcours de formation OpenClassrooms: [Administrateur systèmes, réseaux et sécurité](https://openclassrooms.com/fr/paths/734-administrateur-systemes-reseaux-et-securite)** (Bac+3/+4, obtenu en mai 2024)
+# 🎓 Parcours de formation OpenClassrooms: [Administrateur systèmes, réseaux et sécurité](https://openclassrooms.com/fr/paths/734-administrateur-systemes-reseaux-et-securite)**
 
-Ce cursus professionnalisant m’a permis d’acquérir une **culture générale** et des **compétences** en **gestion des infrastructures IT, administration système, sécurité réseau et services cloud**, à travers des projets concrets couvrant l’ensemble des domaines clés d’un SI.  
-Ce cursus s’appuie sur des projets concrets couvrant l’ensemble des compétences requises pour administrer et sécuriser un système d’information.
+Ce cursus professionnalisant m’a permis d’acquérir une solide **culture générale** et des **compétences techniques** en **gestion des infrastructures IT, administration système, sécurité réseau et services cloud**, à travers des projets concrets couvrant l'ensemble des domaines clés d'un système d'information. Chaque projet est conçu pour renforcer les compétences nécessaires à l'administration et à la sécurisation d'un SI moderne.  
+
+À l’issue de cette formation, que j’ai terminée en **mai 2024**, j’ai obtenu un **diplôme reconnu par l’État (certification RNCP de niveau 6, équivalente à un Bac+3 ou Bac+4, soit une licence professionnelle en informatique)**. Ce parcours m’a permis de développer des compétences polyvalentes et immédiatement applicables en entreprise, notamment en **administration système, automatisation, cybersécurité et cloud computing**. 
 
 ## 🛠 Technologies et outils maîtrisés  
 
@@ -9,7 +10,7 @@ Tout au long de cette formation, j’ai pu travailler sur diverses technologies 
 
 - **Administration système** : Linux (Debian & Ubuntu), Windows Server, Active Directory  
 - **Gestion et support IT** : ITIL, GLPI  
-- **Sécurité et réseau** : Cisco, VPN, Netfilter, Fail2ban, équipements d’interconnexion  
+- **Sécurité et réseau** : Cisco, VPN, Firewall, Fail2ban  
 - **Services et serveurs** : httpd, SQL, SFTP, Nagios, rsync  
 - **Virtualisation et cloud** : VirtualBox, VMware, AWS  
 - **Automatisation et scripting** : Ansible, Bash,  Python, PowerShell  
@@ -32,4 +33,4 @@ Voici un aperçu des projets que j’ai menés au cours de cette formation :
 12. **Évaluer et améliorer le niveau de sécurité d’un domaine**  
 13. **Gérer une migration vers le cloud**  
 
-À l’issue de cette formation, j’ai obtenu un **diplôme reconnu par l’État (certification RNCP de niveau 6, équivalente à un Bac+3 ou Bac+4, soit une licence professionnelle en informatique)**. Grâce à ce parcours, j’ai acquis des compétences polyvalentes, directement applicables en entreprise, notamment en **administration système, automatisation, cybersécurité et cloud computing**.
+---
