@@ -1,4 +1,4 @@
-# 🎓 Parcours de formation OpenClassrooms: [Administrateur systèmes, réseaux et sécurité](https://openclassrooms.com/fr/paths/734-administrateur-systemes-reseaux-et-securite)**
+# 🎓 Parcours de formation OpenClassrooms: [Administrateur systèmes, réseaux et sécurité](https://openclassrooms.com/fr/paths/734-administrateur-systemes-reseaux-et-securite)
 
 Ce cursus professionnalisant m’a permis d’acquérir une solide **culture générale** et des **compétences techniques** en **gestion des infrastructures IT, administration système, sécurité réseau et services cloud**, à travers des projets concrets couvrant l'ensemble des domaines clés d'un système d'information. Chaque projet est conçu pour renforcer les compétences nécessaires à l'administration et à la sécurisation d'un SI moderne.  
 
