@@ -18,4 +18,4 @@ ansible_winrm_read_timeout_sec: 40 # default 30 s && > operation_timeout
 # other  Kerberos option "managed", create a kerberos ticket for the task 
 # then destroy it but mandatory to encrypt the password ==> VAULT
 # ansible_winrm_kinit_mode: managed
-# ansible_password: BARzini&1979
+# ansible_password: "{{ vault_ansible_password }}"
