@@ -8,6 +8,12 @@ Un parcours professionnalisant de 13 projets, qui couvrent les domaines clés d'
 
 Chaque projet part d'un cas d'entreprise fictif, avec un cahier des charges et des livrables présentés en soutenance.
 
+## Mon avis
+
+J'ai pris beaucoup de plaisir à travailler en autonomie sur des projets concrets, proches des situations réelles en entreprise.
+
+Cette formation m'a surtout fait découvrir un réel intérêt, et même une passion, pour les environnements Linux.
+
 ## Projets
 
 Les projets 3, 4, 9 et 10 sont détaillés plus bas.
