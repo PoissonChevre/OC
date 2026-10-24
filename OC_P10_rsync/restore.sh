@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 # Backup Restoration Script
 # -----------------------------------------------------------------------------
-# Author: Renaud CHARLIER
+# Author: PoissonChevre
 # Date: 18-02-2024
 # Description: Performs restoration of backups using rsync. Interactive script 
 # with prompts asking the user the location of the files/directory and the type

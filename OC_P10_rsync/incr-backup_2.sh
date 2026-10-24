@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 # Incremental Backup Script
 # -----------------------------------------------------------------------------
-# Author: Renaud CHARLIER
+# Author: PoissonChevre
 # Date: 18-02-2024
 # Description: Performs an incremental backup using rsync, keeping backups
 # from the specified number of days and ensuring at least the two most recent

@@ -12,7 +12,7 @@
 # Usage:
 #   ./mount_smb_share.sh
 # 
-# Author: Charlier Renaud
+# Author: PoissonChevre
 # Date: 07-02-2024
 # Version: 1.0
 # 

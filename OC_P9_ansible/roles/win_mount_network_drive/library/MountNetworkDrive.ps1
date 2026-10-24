@@ -18,7 +18,7 @@
 	> .\MountNetworkDrive.ps1
 
 .NOTES
-    AUTHOR: Renaud Charlier
+    AUTHOR: PoissonChevre
     DATE: 05-02-2024
     VERSION: 1.3
 #>

@@ -16,7 +16,7 @@
     > .\CreateUserPrivateDirectory.ps1
 
 .NOTES
-    AUTHOR: Renaud Charlier
+    AUTHOR: PoissonChevre
     DATE: 01-02-2024
     VERSION: 1.0
 #>
