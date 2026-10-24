@@ -1,70 +1,46 @@
-# PROJET 4 ***["Déployez une architecture n-tiers pour une PME"](https://openclassrooms.com/fr/paths/734/projects/1382/assignment)***
+# Projet 4 : Déployer une architecture n-tiers pour une PME
 
-## I. Missions
+[Sujet du projet](https://openclassrooms.com/fr/paths/734/projects/1382/assignment) · Entreprise fictive : **BeeSafe**, une start-up d'assurance
 
-Je suis administrateur syst§me cheeBeeSafe, une starip d'assurance, 
-Pour le projet chez BeeSafe, en tant qu'administrateur systèmes et réseaux, ma mission consiste à déployer trois serveurs distincts pour mettre en place une architecture N-tiers robuste :
+## Mission
 
-    Configuration d'un serveur web avec Apache 2.4 et PHP 8.0 sur une machine dédiée.
-    Installation et configuration de MySQL 8.0 sur un serveur dédié pour gérer la base de données.
-    Configuration de Bind9 sur une troisième machine afin de mettre en place le service DNS pour référencer le site web à l'adresse www.beesafe.co.
+En tant qu'administrateur systèmes et réseaux de BeeSafe, déployer une architecture 3-tiers sur trois serveurs Linux :
 
-## II. Méthodologie et Réalisations
+| Serveur | Rôle | Logiciel |
+|---|---|---|
+| SRVweb | Serveur web | Apache 2.4 et PHP 8.0 |
+| SRVsql | Base de données | MySQL 8.0 |
+| SRVdns | DNS du site `www.beesafe.co` | Bind9 |
 
-- Déployer les 3 Vms
-- Installer le serveur Web APACHE2 - SRVweb
-- Installer le serveur de BDD - SRVsql
-- Installer le serveur DNS - SRVsql
-- créer la BDD
-- créer le compte d'exploitation sur mysql
-- Connexion SRVweb <==> SRVsql
-- Connexion SRVdns
-- Compiler les fichiers de configuration pour les livrables
-- Script SQL
-- Fichier de config SQL
-- Schéma Architecture
+## Réalisation
 
-- [x] fichiers de configuration DNS qui intègrent le nom de domaine, nommés au format txt
-- [x] fichiers de configuration du service HTTPD (Apache) qui intègrent le virtual host hébergeant le site au format txt
-- [x] script SQL qui a permis de créer le compte d’exploitation de la base de données
-- [x] le fichier de configuration des sources du prototype modifié pour intégrer les identifiants de connexion à la base de données
-- [x] le schéma de l’architecture 3-tiers au format pdf
+1. Déployer les 3 machines virtuelles.
+2. Installer Apache sur SRVweb, MySQL sur SRVsql et Bind9 sur SRVdns.
+3. Créer la base de données et un compte d'exploitation MySQL dédié.
+4. Connecter le site (SRVweb) à la base de données (SRVsql).
+5. Configurer la zone DNS pour que `www.beesafe.co` pointe vers SRVweb.
 
-## III. Compétences et technologies acquises
+## Livrables
 
-- Concevoir la cartographie d'un réseau
-- Construire un réseau TCP-IP
-- Formaliser les procédures via une documentation technique
+- Fichiers de configuration DNS avec le nom de domaine
+- Configuration Apache avec le virtual host du site
+- Script SQL de création du compte d'exploitation
+- Fichier de configuration du site, modifié avec les identifiants de la base de données
+- Schéma de l'architecture 3-tiers (PDF)
 
-## IV. ressources consultées pour la réalisation du projet
+Les livrables ne sont pas publiés dans ce dépôt.
 
-- ["Initiez-vous à Linux"](https://openclassrooms.com/fr/courses/7170491-initiez-vous-a-linux)
-- ["Administrez un système Linux"](https://openclassrooms.com/fr/courses/7274161-administrez-un-systeme-linux)
-- ["Gérez votre serveur Linux et ses services"](https://openclassrooms.com/fr/courses/1733551-gerez-votre-serveur-linux-et-ses-services)
-- ["Virtualisez votre architecture et vos environnements de travail"](https://openclassrooms.com/fr/courses/2035806-virtualisez-votre-architecture-et-vos-environnements-de-travail)
-- ["Implémentez vos bases de données relationnelles avec SQL"](https://openclassrooms.com/fr/courses/6971126-implementez-vos-bases-de-donnees-relationnelles-avec-sql)
+## Compétences
 
+- Installer et configurer des services Linux : Apache, MySQL, Bind9
+- Séparer les rôles d'une application sur plusieurs serveurs (architecture n-tiers)
+- Virtualiser un environnement de travail
+- Documenter une architecture
 
-### 3. Tâches
+## Ressources
 
-- [x] Déployer les 3 Vms
-- [x] Installer le serveur Web APACHE2 - SRVweb
-- [x] Installer le serveur de BDD - SRVsql
-- [x] Installer le serveur DNS - SRVsql
-- [x] créer la BDD
-- [x] créer le compte d'exploitation sur mysql
-- [x] Connexion SRVweb <==> SRVsql
-- [x] Connexion SRVdns
-- [x] Compiler les fichiers de configuration pour les livrables
-- [x] Script SQL
-- [x] Fichier de config SQL
-- [x] Schéma Architecture
-
-### 4. livrables
-
-- [x] fichiers de configuration DNS qui intègrent le nom de domaine, nommés au format txt
-- [x] fichiers de configuration du service HTTPD (Apache) qui intègrent le virtual host hébergeant le site au format txt
-- [x] script SQL qui a permis de créer le compte d’exploitation de la base de données
-- [x] le fichier de configuration des sources du prototype modifié pour intégrer les identifiants de connexion à la base de données
-- [x] le schéma de l’architecture 3-tiers au format pdf
-
+- [Initiez-vous à Linux](https://openclassrooms.com/fr/courses/7170491-initiez-vous-a-linux)
+- [Administrez un système Linux](https://openclassrooms.com/fr/courses/7274161-administrez-un-systeme-linux)
+- [Gérez votre serveur Linux et ses services](https://openclassrooms.com/fr/courses/1733551-gerez-votre-serveur-linux-et-ses-services)
+- [Virtualisez votre architecture et vos environnements de travail](https://openclassrooms.com/fr/courses/2035806-virtualisez-votre-architecture-et-vos-environnements-de-travail)
+- [Implémentez vos bases de données relationnelles avec SQL](https://openclassrooms.com/fr/courses/6971126-implementez-vos-bases-de-donnees-relationnelles-avec-sql)
